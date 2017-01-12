@@ -17,3 +17,8 @@
 .textContainer {
   margin-top: 200px;
 }
+
+.checkbox {
+  display: block;
+  margin-bottom: 20rpx;
+}

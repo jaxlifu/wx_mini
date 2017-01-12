@@ -1,5 +1,23 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">icon</text>
+    <text class="page__desc">icon</text>
+  </view>
+  <view class="page__bd">
+    <view class="group">
+      <block wx:for="{{iconSize}}">
+        <icon type="success" size="{{item}}"  />
+      </block>
+    </view>
+    <view class="group">
+      <block wx:for="{{iconType}}" wx:for-index="index">
+        <icon type="{{item}}" size="45"  />
+      </block>
+    </view>
+    <view class="group">
+      <block wx:for="{{iconColor}}" wx:for-index="index">
+        <icon type="success" size="45" color="{{item}}"  />
+      </block>
+    </view>
   </view>
 </view>

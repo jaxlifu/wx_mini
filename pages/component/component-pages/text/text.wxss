@@ -11,9 +11,13 @@
 .textStyle {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  line-height: 24px;
 }
 
 .textContainer {
   margin-top: 200px;
+}
+
+.body {
+  margin: 40rpx;
 }

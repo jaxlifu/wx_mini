@@ -1,5 +1,11 @@
-<view class="container">
-  <view class="textContainer">
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">text</text>
+    <text class="page__desc">text</text>
+  </view>
+  <view class="body">
     <text class="textStyle">{{text}}</text>
+    <button size="default" bindtap="add">add line</button>
+    <button size="default" bindtap="remove">remove line</button>
   </view>
 </view>

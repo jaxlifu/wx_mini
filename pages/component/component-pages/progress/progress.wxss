@@ -17,3 +17,7 @@
 .textContainer {
   margin-top: 200px;
 }
+
+.item{
+  margin: 20rpx;
+}

@@ -1,5 +1,15 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="section">
+            <view class="section section_gap">地区选择器</view>
+            <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
+                <view class="picker">选择：{{array[index]}}</view>
+            </picker>
+        </view>
+    </view>
 </view>

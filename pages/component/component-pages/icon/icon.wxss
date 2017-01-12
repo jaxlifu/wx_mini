@@ -17,3 +17,7 @@
 .textContainer {
   margin-top: 200px;
 }
+
+.group{
+  margin: 20rpx 0rpx 20rpx 0rpx;
+}

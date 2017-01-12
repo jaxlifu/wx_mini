@@ -1,5 +1,51 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+
+    <view class="page__bd">
+
+        <view class="section">
+            <input type="text" placeholder="这个是一个自动获取焦点的input" auto-focus />
+        </view>
+
+        <view class="section">
+            <input type="text" placeholder="这个只有在按钮点击的时候才能获取焦点" focus="{{focus}}" />
+            <view class="btn-area">
+                <button bindtap="inputFocus">使得输入框获取焦点</button>
+            </view>
+        </view>
+
+        <view class="section">
+            <input type="text" maxlength="11" placeholder="最大输入11个字符" />
+        </view>
+
+        <view class="section">
+            <view class="section__title">你输入的值为:{{inputValue}}</view>
+            <input type="text" bindinput="bindKeyInput" placeholder="输入同步到View中" />
+        </view>
+
+        <view class="section">
+            <input type="number" bindinput="bindReplaceInput" placeholder="连续的2个1会变成2" />
+        </view>
+
+        <view class="section">
+            <input type="number" bindinput="bindHideKeyboard" placeholder="输入123自动收起键盘" />
+        </view>
+
+        <view class="section">
+            <input type="text" password placeholder="请输入密码" />
+        </view>
+        <view class="section">
+            <input type="digit" placeholder="带小数点的数字键盘" />
+        </view>
+        <view class="section">
+            <input type="idcard" placeholder="身份证号码" />
+        </view>
+
+        <view class="section">
+            <input type="idcard" placeholder="占位符是红的的" placeholder-style="color:red;" />
+        </view>
+    </view>
 </view>

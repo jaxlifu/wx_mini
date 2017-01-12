@@ -1,5 +1,12 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">progress</text>
+    <text class="page__desc">progress</text>
   </view>
-</view>
+  <view class="page__bd">
+    <progress class="item" percent="20"  active show-info  />
+    <progress class="item"  percent="40" stroke-width="12"  />
+    <progress class="item"  percent="60" color="pink"  />
+    <progress class="item"  percent="80"  active  />
+  </view>
+</view> 

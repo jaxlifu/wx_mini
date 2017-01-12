@@ -1,5 +1,42 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+    <view class="page__bd">
+        <form bindsubmit="formSubmit" bindreset="formReset">
+            <view class="section section_gap">
+                <view class="section__title">switch</view>
+                <switch checked="false" name="switch" />
+            </view>
+            <view class="section section_gap">
+                <view class="section__title">slider</view>
+                <slider name="slider" min="slider" show-value />
+            </view>
+            <view class="section">
+                <view class="section__title">input</view>
+                <input name="input" placeholder="请输入用户名" />
+            </view>
+            <!--radio-group -->
+            <view class="section section__gap">
+                <view class="section__title">radio</view>
+                <radio-group name="radio-group">
+                    <label> <radio value="radio1"  /> 男 </label>
+                    <label> <radio value="radio2"  /> 女 </label>
+                </radio-group>
+            </view>
+            <!-- checkbox -->
+            <view class="section section__gap">
+                <view class="section__title">checkbox</view>
+                <checkbox-group name="checkbox-group">
+                    <label> <checkbox value="checkbox1"  /> 男 </label>
+                    <label> <checkbox value="checkbox2"  /> 女 </label>
+                </checkbox-group>
+            </view>
+            <view class="btn-area">
+                <button form-type="submit">submit</button>
+                <button form-type="reset">Reset</button>
+            </view>
+        </form>
+    </view>
 </view>
