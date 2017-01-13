@@ -1,5 +1,16 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="section">
+            <map class="map" longitude="113.324520" latitude="23.099994"
+              scale="14" controls="{{controls}}" bindcontroltap="controltap"
+              markers="{{markers}}" bindmarkertap="markertap"
+              polyline="{{polyline}}" bindregionchange="regionChange"
+            ></map>
+        </view>
+    </view>
 </view>

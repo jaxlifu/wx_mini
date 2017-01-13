@@ -1,5 +1,26 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+    <view class="page__bd">
+        <view class="section tc">
+            <video src="{{src}}"></video>
+            <view class="btn-area">
+                <button bindtap="bindGetVideo">获取视频</button>
+            </view>
+        </view>
+
+        <view class="section tc">
+            <!--开启弹幕模式-->
+            <video src="{{src}}" id="csxy" danmu-list="{{danmuList}}" enable-danmu controls danmu-btn></video>
+            <view class="btn-area">
+                <button bindtap="bindGetVideo">获取视频</button>
+                <input bindblur="bindInputBlur" type="text" placeholder="请输入弹幕内容" focus="{{true}}" />
+                <button bindtap="bindSendDanmu">发送弹幕</button>
+            </view>
+        </view>
+    </view>
+
+
 </view>

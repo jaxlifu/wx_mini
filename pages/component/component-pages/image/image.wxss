@@ -17,3 +17,9 @@
 .textContainer {
   margin-top: 200px;
 }
+
+.image{
+  width: 400rpx;
+  height: 400rpx;
+  background-color: #eeeeee;
+}

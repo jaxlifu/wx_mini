@@ -1,0 +1,12 @@
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="seciton">
+            <contact-button type="default-light" size="20" session-from="weapp"> </contact-button>
+        </view>
+    </view>
+</view>

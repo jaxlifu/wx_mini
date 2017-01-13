@@ -14,7 +14,7 @@ Page({
             id: 'form',
             name: '表单组件',
             open: false,
-            pages: ['button', 'checkbox', 'form', 'input', 'label', 'picker', 'radio', 'slider', 'switch']
+            pages: ['button', 'checkbox', 'form', 'input', 'label', 'picker', 'picker-view', 'radio', 'slider', 'switch', 'textarea']
         }, {
             id: 'feedback',
             name: '操作反馈',
@@ -38,6 +38,10 @@ Page({
             id: 'canvas',
             name: '画布',
             pages: ['canvas']
+        }, {
+            id: 'contact-button',
+            name: '客服会话按钮',
+            pages: ['contact-button']
         }]
     },
     widgetsToggle: function(e) {

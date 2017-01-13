@@ -2,7 +2,9 @@ Page({
     data: {
         text: "Page picker",
         index: 0,
-        array: ['美国', '中国', '巴西', '日本']
+        array: ['美国', '中国', '巴西', '日本'],
+        date: '2016-09-01',
+        time: '12:01'
 
     },
     onLoad: function(options) {
@@ -23,6 +25,22 @@ Page({
     bindPickerChange: function(param) {
         console.log(param)
         console.log('picker发送选择改变，携带值为', param.detail.value)
-        this.setData({ index: param.detail.value })
+        this.setData({
+            index: param.detail.value
+        })
+    },
+    bindTimeChange: function(param) {
+        console.log(param)
+        console.log('picker发送选择改变，携带值为', param.detail.value)
+        this.setData({
+            time: param.detail.value
+        })
+    },
+    bindDateChange: function(param) {
+        console.log(param)
+        console.log('picker发送选择改变，携带值为', param.detail.value)
+        this.setData({
+            date: param.detail.value
+        })
     }
 })

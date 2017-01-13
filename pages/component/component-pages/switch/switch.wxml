@@ -1,5 +1,17 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="section">
+            <text class="switch_title">wifi</text>
+            <switch checked="{{false}}" bindchange="switch1Change" />
+        </view>
+        <view class="section">
+            <text class="switch_title">图片缓存</text>
+            <switch checked="{{true}}" bindchange="switch2Change" />
+        </view>
+    </view>
 </view>

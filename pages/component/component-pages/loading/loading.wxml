@@ -1,5 +1,14 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="section">
+            <button bindtap="showNavigationBarLoading">showNavigationBarLoading</button>
+            <button bindtap="hideNavigationBarLoading">hideNavigationBarLoading</button>
+            <button bindtap="showLoadingToast">showLoadingToast</button>
+        </view>
+    </view>
 </view>

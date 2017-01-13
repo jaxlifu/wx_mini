@@ -6,10 +6,23 @@
 
     <view class="page__bd">
         <view class="section">
-            <view class="section section_gap">地区选择器</view>
+            <view class="section__title">地区选择器</view>
             <picker mode="selector" range="{{array}}" value="{{index}}" bindchange="bindPickerChange">
                 <view class="picker">选择：{{array[index]}}</view>
             </picker>
         </view>
+
+        <view class="section">
+            <view class="section__title">时间选择器</view>
+            <picker mode="time" value="{{time}}" start="09:00" end="00:00" bindchange="bindTimeChange">
+                <view class="picker">选择时间：{{time}}</view>
+            </picker>
+        </view>
+
+        <view class="section">
+            <view class="section__title">日期选择器</view>
+        </view><picker mode="date" value="{{date}}" start="2016-01-01" end="2017-12-31" bindchange="bindDateChange">
+            <view class="picker">选择日期：{{date}}</view>
+        </picker>
     </view>
 </view>

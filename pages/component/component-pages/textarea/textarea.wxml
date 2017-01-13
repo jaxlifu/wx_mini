@@ -1,5 +1,17 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="section">
+            <form bindsubmit="bindSubmit" bindreset="bindReset">
+                <view class="textarea">
+                    <textarea placeholder="请输入评论信息" name="comment" />
+                </view>
+                <button form-type="submit">评论</button>
+            </form>
+        </view>
+    </view>
 </view>

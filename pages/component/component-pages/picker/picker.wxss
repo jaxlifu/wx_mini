@@ -17,3 +17,8 @@
 .textContainer {
   margin-top: 200px;
 }
+
+.picker{
+  background-color: white;
+  padding: 40rpx;
+}

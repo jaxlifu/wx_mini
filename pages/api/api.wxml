@@ -1,5 +1,20 @@
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
-  </view>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{description}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="section">
+            <block wx:for="{{apiList}}" wx:for-item="item">
+                <view class="api-title" id="{{item.id}}">{{item.name}}</view>
+                <block wx:for="{{item.pages}}">
+                    <navigator url="api-pages/{{item}}/{{item}}">
+                        <view class="api-item">{{item}}</view>
+                    </navigator>
+                </block>
+            </block>
+        </view>
+
+    </view>
 </view>

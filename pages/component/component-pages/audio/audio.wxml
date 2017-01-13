@@ -1,5 +1,16 @@
-<view class="container">
-    <view class="textContainer">
-        <text class="textStyle">{{text}}</text>
+<view class="page">
+    <view class="page__hd">
+        <text class="page__title">{{text}}</text>
+        <text class="page__desc">{{text}}</text>
+    </view>
+
+    <view class="page__bd">
+        <view class="section">
+            <audio id="audio" src="{{src}}" poster="{{poster}}" name="{{name}}" author="{{author}}" controls></audio>
+            <button bindtap="audioPlay">播放</button>
+            <button bindtap="audioPause">暂停</button>
+            <slider min="0" max="{{maxTime}}" show-value bindchange="audioTime" />
+            <button bindtap="audioStart">回到开头</button>
+        </view>
     </view>
 </view>
